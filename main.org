@@ -1,17 +1,20 @@
 #+MACRO: NEWLINE @@latex:\\@@ @@html:<br/>@@
-#+title:  Master of Science in Data Science:  Prospectus v0.1.0
-#+author:  Office of the Associate Dean  {{{NEWLINE}}} Division of Flexible Learning {{{NEWLINE}}} DFL, IIIT Hyderabad\footnote{Please send comments to associate-dean-dfl@iiit.ac.in}
-#+date: [2025-08-29 Fri] 
+# #+title:  Master of Science in Data Science:  Prospectus v0.1.0
+# #+author:  Office of the Associate Dean  {{{NEWLINE}}} Division of Flexible Learning {{{NEWLINE}}} DFL, IIIT Hyderabad
+# #+author:  Office of the Associate Dean  {{{NEWLINE}}} Division of Flexible Learning {{{NEWLINE}}} DFL, IIIT Hyderabad\footnote{Please send comments to associate-dean-dfl@iiit.ac.in}
+# #+date: [2025-08-29 Fri]
+# #+email: associate-dean-dfl@iiit.ac.in
 #+include: headers.org
 #+OPTIONS: ':nil *:t -:t ::t <:t H:5 \n:nil ^:t
 #+OPTIONS: arch:headline author:t broken-links:nil c:nil
 #+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t
-#+OPTIONS: email:nil f:t inline:t num:t p:nil pri:nil
-#+OPTIONS: prop:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: email:t f:t inline:t num:t p:nil pri:nil
+#+OPTIONS: prop:nil stat:t tags:t tasks:t tex:t timestamp:t toc:nil
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport1
 #+Latex_header: \usepackage{datetime}
 #+Latex_header: \usepackage{float}
+#+LATEX_HEADER: \usepackage{graphicx}
 # https://tex.stackexchange.com/questions/374636/how-to-align-numbers-on-decimal-point-in-latex
 #+Latex_header: \usepackage{dcolumn,booktabs}
 #+Latex_header: \usepackage{pdfpages}
@@ -27,6 +30,22 @@
 
 #+Latex_header: \usepackage{hyperref}
 #+latex_header: \hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=OliveGreen}
+#+BEGIN_EXPORT latex
+\begin{titlepage}
+    \centering
+    {\Huge\bfseries Master of Science in Data Science:  Prospectus v0.1.0\par}
+    \vspace{1cm}
+    {\Large Office of the Associate Dean\par}
+    {\Large Division of Flexible Learning\par}
+    \vspace{0.5cm}
+    {\large \today\par}
+    \vspace{4em}
+%    \vfill % pushes logo to the bottom of the page
+    \includegraphics[width=1.0\textwidth]{logo.png}
+\end{titlepage}
+#+END_EXPORT
+#+TOC: headlines 2
+
 \listoftables
 
 * Version History
@@ -50,8 +69,8 @@ This document contains policies that are expected to change
 only occasionally.  However, minor changes are likely to be
 made as and when necessary, which could mean a couple of
 times a month or sometimes more frequent than that.
-Editorial changes to this document will again be done
-whenever necessary.  These three different types of changes
+Copy-editing changes will periodically and will often folded
+in with minor changes.  The three different types of changes
 will be captured by a version number.  (See Section
 [[#sec-version]].)
 
@@ -105,12 +124,12 @@ instead of being dictated by a fixed pace.
 | Duration              | upto 4 years      |
 |-----------------------+-------------------|
 
-The first aspect of the flexibility is exhibited in Table
-[[tbl-overview]], where the duration of the programme is four
-years, which is twice the duration of a normal Masters
-programme in India.  The extra two years are a way of
-accommodating the self-paced approach to acquiring the
-degree that a student may wish to choose.
+The first aspect of the flexibility is exhibited in the last
+row of Table [[tbl-overview]], where the duration of the
+programme is four years, which is twice the duration of a
+normal Masters programme in India.  The extra two years are
+a way of accommodating the self-paced approach to acquiring
+the degree that a student may wish to choose.
 
 * Admission, Cohorts and Profile
 
@@ -293,7 +312,8 @@ tickets, and 1 final exam ticket.
 *** Mapping a ticket to an event
 A ticket is booked for an event.  The assignment submission
 is not tied to any date.  The exam ticket and the tutorial
-tickets are tied to the date on the nominal schedule.  
+tickets are initially tied to the date on the nominal
+schedule.
 
 *** Cashing in on a ticket
 A ticket may be consumed or cashed when the student either
@@ -309,14 +329,6 @@ week in advance of the event date.  If slots are not
 available, the booking may be denied and the student will
 then need to look to book for a future date when that event
 will repeat.  
-
-*** Assignment tickets
-For each course, the student is initially given 11 homework
-tickets.  The student may submit an assignment any time
-during the programme calendar.  Each submission consumes one
-ticket.  If a student wishes to re-submit a homework and is
-left with no more tickets, they may do so by purchasing an
-extra ticket.  
 
 *** Ticket expires if no-show
 If a student has a booking for an exam or tutorial event,
