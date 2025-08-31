@@ -1,0 +1,98 @@
+# #+SETUPFILE: ./org-templates/level-0.org
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil 
+#+OPTIONS:   h:6
+#+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t
+#+OPTIONS: arch:headline author:t c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t
+#+OPTIONS: inline:t num:3 p:nil pri:nil prop:nil stat:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t toc:t
+#+OPTIONS: tags:nil
+#+OPTIONS: todo:t |:t
+
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+
+# this is for fancy titles.  Including this package
+# suppresses section numbers, so we're not including it. 
+# but might if we later decide to do something fancy with
+# section umber. 
+# #+LaTeX_HEADER: \usepackage[nobottomtitles]{titlesec}
+
+# #+LaTeX_HEADER: \setcounter{secnumdepth}{5}
+#+LaTeX_HEADER: \usepackage{siunitx}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{mathpazo}
+#+LaTeX_HEADER: \usepackage[section]{placeins}
+
+# see https://emacs.stackexchange.com/questions/26179/change-org-mode-table-style-just-for-latex-export
+#+LaTeX_HEADER: \usepackage{booktabs}
+#+LaTeX_HEADER: \linespread{1.05}
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage{courier}
+#+LaTeX_HEADER: \usepackage{varioref}
+#+LaTeX_HEADER: \usepackage[usenames,dvipsnames]{color}
+#+LaTeX_HEADER: \usepackage[usenames,svgnames]{xcolor}
+#+LaTeX_HEADER: \usepackage{colortbl}
+#+LaTeX_HEADER: \usepackage{fancyvrb}
+#+LaTeX_HEADER: \usepackage{tfrupee}  
+# #+LaTeX_HEADER: \newcommand{\rupee}{Rs.\ \@}
+#+LaTeX_HEADER: \usepackage{everypage}
+#+LaTeX_HEADER: \usepackage[section]{placeins}
+#+LaTeX_HEADER: \usepackage{rotating}
+
+
+# #+LaTeX_HEADER: \usepackage{tfrupee}
+# #+LaTeX_HEADER: \usepackage{hyperref}
+# #+LaTeX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue, citecolor=OliveGreen,urlcolor=RawSienna}
+# #+LaTeX_HEADER: \floatplacement{figure}{H}
+# #+LaTeX_HEADER: \floatplacement{table}{H}
+#+LaTeX_HEADER: \newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+#+LaTeX_HEADER: \newcommand{\revised}[1]{\protect{\colorbox{yellow}{#1}}}
+
+#+LaTeX_HEADER: \newcommand{\nbsp}{~}
+#+LaTeX_HEADER: \setcounter{section}{0}
+
+#+LaTeX_HEADER: \usepackage{draftwatermark}
+# #+LaTeX_HEADER: \SetWatermarkColor[rgb]{0.6,0.9,0.6}
+# 
+#+LaTeX_HEADER: \SetWatermarkScale{0.5}
+#+LaTeX_HEADER: \SetWatermarkText{}
+#+LaTeX_HEADER: \usepackage{caption}
+# # [within=none] option for caption suppressed
+#+LaTeX_HEADER: \DeclareCaptionLabelFormat{myformat}{\Large{\color{Blue}{#1}~\textbf{#2}}}
+# #+LaTeX_HEADER: \DeclareCaptionLabelFormat{myformat}{{#1}~{#2}}
+#+LaTeX_HEADER: \captionsetup{labelformat=myformat}
+
+#+LaTeX_HEADER: \DeclareCaptionFont{red}{\color{red}}
+#+LaTeX_HEADER: \DeclareCaptionFont{green}{\color{green}}
+#+LaTeX_HEADER: \DeclareCaptionFont{yellow}{\color{yellow}}
+#+LaTeX_HEADER: \DeclareCaptionFont{blue}{\color{blue}}
+#+LaTeX_HEADER: \DeclareCaptionFont{foo}{\color{red}}
+
+# # see http://tex.stackexchange.com/questions/95601/framed-floats-and-background-colors-for-captions
+
+#+LaTeX_HEADER: \DeclareCaptionFormat{box}{\colorbox[rgb]{0.9,0.9,0.9}{\parbox{\textwidth}{#1#2#3}}}
+#+LaTeX_HEADER: \newcommand{\hilightcaption}{\captionsetup{format=box}}
+
+
+#+LaTeX_HEADER: \newcommand{\normalcaption}{\captionsetup{labelformat=myformat, format=plain}}
+#+LaTeX_HEADER: \newcommand{\h}[1]{\protect{\bf {#1}}}
+
+
+# #+LATEX: \listoftables
+
+\hilightcaption
+#+LaTeX_HEADER: \usepackage{pgf}
+#+begin_export latex 
+\sisetup{
+    group-digits=true,
+    group-four-digits=true,
+    group-separator={,\ },
+}
+#+END_export 
+
+

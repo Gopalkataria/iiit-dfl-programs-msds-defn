@@ -1,0 +1,714 @@
+#+MACRO: NEWLINE @@latex:\\@@ @@html:<br/>@@
+#+title:  Master of Science in Data Science:  Prospectus v0.1.0
+#+author:  Office of the Associate Dean  {{{NEWLINE}}} Division of Flexible Learning {{{NEWLINE}}} DFL, IIIT Hyderabad\footnote{Please send comments to associate-dean-dfl@iiit.ac.in}
+#+date: [2025-08-29 Fri] 
+#+include: headers.org
+#+OPTIONS: ':nil *:t -:t ::t <:t H:5 \n:nil ^:t
+#+OPTIONS: arch:headline author:t broken-links:nil c:nil
+#+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:nil f:t inline:t num:t p:nil pri:nil
+#+OPTIONS: prop:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport1
+#+Latex_header: \usepackage{datetime}
+#+Latex_header: \usepackage{float}
+# https://tex.stackexchange.com/questions/374636/how-to-align-numbers-on-decimal-point-in-latex
+#+Latex_header: \usepackage{dcolumn,booktabs}
+#+Latex_header: \usepackage{pdfpages}
+
+#+Latex_header: \usepackage{titlesec}
+#+Latex_header: \newcommand{\sectionbreak}{\clearpage}
+
+# multiline column headers in long tables
+# https://tex.stackexchange.com/questions/138637/multi-line-and-centered-title-and-content-in-longtables
+#+Latex_header: \usepackage{array}
+#+Latex_header: \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+#+Latex_header: \setcounter{secnumdepth}{5}
+
+#+Latex_header: \usepackage{hyperref}
+#+latex_header: \hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=OliveGreen}
+\listoftables
+
+* Version History
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+ - Version 0.1.0 :: Initial draft version.  Contains Fee
+   structure and Course listing as appendices
+
+
+* Purpose and Scope
+
+This document is the central place for all policies related
+to the Master of Science in Data Science programme.  This
+programme is being offered by the Division of Flexible
+Learning's (DFL) Centre for Distance and Online Education
+(CDOE).
+
+This document contains policies that are expected to change
+only occasionally.  However, minor changes are likely to be
+made as and when necessary, which could mean a couple of
+times a month or sometimes more frequent than that.
+Editorial changes to this document will again be done
+whenever necessary.  These three different types of changes
+will be captured by a version number.  (See Section
+[[#sec-version]].)
+
+This document is to be read in conjunction with the
+following other documents that evolve independently.
+
+ - Course Listings :: This document lists the courses and
+   the syllabi for each course, along with the prerequisite
+   relationship between courses.  New electives will be
+   added to this document as and when they become available.
+   The latest course listing will be made available on the
+   programme's website and the programme's learning
+   management system (LMS). 
+
+ - Programme Calendar :: This artefact lists the various
+   events pertaining to the course.   It will be available
+   on the programme's LMS. 
+   
+ - Fee Specification Table :: This document lists the latest
+   fee structure for various artefacts and events of the
+   programme.  This table will be made available on the
+   programme's website and on the programme's LMS.
+
+* Programme Overview
+
+The Master of Science in Data Science (Online) (abbreviated
+MSDS in this document) is a programme designed to prepare
+the student for a career in Data Science.  The programme
+demands commitment from the student but also offers
+considerable flexibility in terms of self-pacing, i.e.,
+planning to complete course activities at their own pace
+instead of being dictated by a fixed pace.
+
+#+name: tbl-overview
+#+caption: Programme Overview
+|-----------------------+-------------------|
+|-----------------------+-------------------|
+| Programme             | Master of Science |
+|                       | in Data Science   |
+|-----------------------+-------------------|
+| Official Abbreviation | MSc. DS           |
+|-----------------------+-------------------|
+| Informal Abbreviation | MSDS              |
+|-----------------------+-------------------|
+| No. credits           | 80                |
+|-----------------------+-------------------|
+| No. courses           | 16                |
+|-----------------------+-------------------|
+| Credit per course     | 05                |
+|-----------------------+-------------------|
+| Duration              | upto 4 years      |
+|-----------------------+-------------------|
+
+The first aspect of the flexibility is exhibited in Table
+[[tbl-overview]], where the duration of the programme is four
+years, which is twice the duration of a normal Masters
+programme in India.  The extra two years are a way of
+accommodating the self-paced approach to acquiring the
+degree that a student may wish to choose.
+
+* Admission, Cohorts and Profile
+
+   - Who can apply :: Anyone with a Bachelors degree in
+     Science, Technology or Engineering.
+
+   - Prerequisites :: The applicant needs to have
+     completed a basic course in programming (preferably
+     Python) and also one or more courses in undergraduate
+     mathematics that cover elements of calculus, linear
+     algebra and probability theory.
+
+   - Elibility does not imply admission :: Note that
+     eligibility alone is insufficient to guarantee
+     admission to the programme.  The final decision on
+     admissions is made by the admissions committee of the
+     Centre for Distance and Online Education, Division of
+     Flexible Learning, IIIT Hyderabad.
+
+   - Admission as Cohorts :: Admission to the programme
+     is done periodically.  Students are admitted in batches
+     called cohorts.  Students in a cohort share some common
+     resources like a discussion group.  However, in future,
+     it is possible that admissions are kept open and
+     rolling, so the student need not belong to a cohort.
+
+ - Student Identification and Profile :: A student will be
+   assigned a roll-number at the time of admission.  The
+   email address given at the time of admission will also be
+   used to uniquely identify a student and it will be used
+   for all official communication with the student.
+     
+* Program Registration and Fee payment
+
+ - Admission to a Programme :: A student is admitted to
+   the entire programme, not an individual course, a degree
+   or a diploma.
+
+ - Registration and Fees :: A student registers for a set
+   of courses by paying the fees /prevailing at the time of/
+   registration.  Courses may be registered in sets of four,
+   eight or all sixteen.
+
+ - Open Registration :: A student can register for a set of
+   courses any time of the year.  The courses will be made
+   available to the student on the LMS only according to the
+   \hyperlink{nom-sched}{nominal schedule} of the cohort to
+   which the student belongs.  Students are encouraged to
+   register well in advance of the start date of a term so
+   that they can benefit from aligning with a
+   \hyperlink{nom-sched}{nominal schedule}.
+
+
+* Structure of the Programme
+** Courses,  terms and weeks
+A /course/ is a collection of academic activities undertaken
+by a student with the goal of learning demonstrated by the
+earning of credits.  A /term/ is a temporal interval over
+which the course activities are carried out.  Two terms
+together form a /semester/.
+
+The MSDS programme consists of 16 courses.  Each course's
+artefacts and activities are planned over a term.  A term
+lasts 13 weeks.  
+
+** Temporal Flexibility: Nominally paced vs. Self-paced
+
+One of the salient features of the MSDS programme is the
+flexibility it offers to students who wish to complete
+courses at their own pace.  A distinction is to be made
+between /nominally-paced/ and /self-paced/ schedules.  A
+nominally paced schedule or a
+\hypertarget{nom-sched}{nominal schedule} is an ideal
+schedule which assumes that a student completes a course (an
+academic entity) within a term.
+
+This is shown in Table [[tbl-weeks]].
+
+#+name: tbl-weeks
+#+caption:  Week-wise breakup of a nominally paced schedule for a course.
+|------------+---------------------|
+|------------+---------------------|
+| Week       | Type                |
+|------------+---------------------|
+| Weeks 1-11 | Instructional Weeks |
+|------------+---------------------|
+| Week 12    | Preparation Week    |
+|------------+---------------------|
+| Week 13    | Exam Week           |
+|------------+---------------------|
+
+
+On the other hand, a student may complete the course
+according to their own schedule subject to some very broad
+constraints, which are specified later in this document.
+For example, a student may decide to skip the final exam
+during the 13th week and instead opt to take the exam when
+it is offered again at a later date.   
+
+** Improvement Flexbility
+
+The programme allows the student to improve their
+performance in a course by allowing re-submission of graded
+assignments and re-taking of final exams.  In most cases,
+this would be done by the student to pass the minimum-score
+requirements for assignments, final exam and overall score
+in the course.  In other occasions, the student may choose
+to improve their score even though their scores meet the
+minimum pass requirement.
+
+** Weekly effort per course
+
+The activities and estimated student effort in a course week
+and over the duration of the course is taken at nominal pace
+is listed in Table [[tbl-effort]].  These estimates may vary
+slightly across courses.
+
+#+name: tbl-effort
+#+caption:  Expected weekly and overall effort for a course along with mapping to UGC four-quadrant model (Ref.  https://deb.ugc.ac.in/DEB/OnlineLearning).  
+|-----+------------------------------------+------------+--------------|
+|-----+------------------------------------+------------+--------------|
+|     | Activity                           | Effort (h) | UGC Quadrant |
+|-----+------------------------------------+------------+--------------|
+|  1. | Watch video lectures with quiz     |          2 | I            |
+|-----+------------------------------------+------------+--------------|
+|  2. | Attempt Quizzes                    |        0.5 | IV           |
+|-----+------------------------------------+------------+--------------|
+|  3. | Attend Tutorial/Watch recording    |          1 | IV           |
+|-----+------------------------------------+------------+--------------|
+|  4. | Study reading material             |          3 | II, III      |
+|-----+------------------------------------+------------+--------------|
+|  5. | Solve practice problem sheet       |          2 | IV           |
+|-----+------------------------------------+------------+--------------|
+|  6. | Submit Graded Assignment           |          4 | IV           |
+|-----+------------------------------------+------------+--------------|
+|  7. | Total per week                     |       12.5 |              |
+|-----+------------------------------------+------------+--------------|
+|     | x 11 weeks                         |      137.5 |              |
+|-----+------------------------------------+------------+--------------|
+|  8. | Prepare for Final Exam (12th week) |       10.5 |              |
+|-----+------------------------------------+------------+--------------|
+|  9. | Write the Final Exam (12th week)   |          2 |              |
+|-----+------------------------------------+------------+--------------|
+| 10. | Total hours of engagement          |        150 |              |
+|     | per course                         |            |              |
+|-----+------------------------------------+------------+--------------|
+
+* Programme Calendar, Events, Booking 
+
+The calendar of the programme is set to a nominal schedule.
+The calendar is populated by events, which are summarised in
+Table [[tbl-events]]:
+
+#+name: tbl-events
+#+caption:  Calendar events and their types
+|----------------------------+----------+------------------------------------------|
+|----------------------------+----------+------------------------------------------|
+| Event type                 | Notation | Explanation                              |
+|----------------------------+----------+------------------------------------------|
+| Cohort/Term Start date     | $S_{ci}$ | Start date for cohort $c$'s term $i$     |
+|----------------------------+----------+------------------------------------------|
+| Tutorial event for course  | $T_{ij}$ | Course $i$'s Tutorial for week $j$.      |
+|----------------------------+----------+------------------------------------------|
+| Exam                       | $E_{i}$  | Exam for Course $i$                      |
+|----------------------------+----------+------------------------------------------|
+
+
+** Events and Tickets
+
+To facilitate flexibility, the MSDS programme permits (under
+certain conditions) to either re-schedule or re-attempt
+certain types of events.  This is implemented through
+tickets and a ticket-booking protocol.
+
+*** Initial tickets
+For each course, a student is given an initial set of
+tickets: 11 assignment submission tickets, 11 tutorial
+tickets, and 1 final exam ticket.  
+
+*** Mapping a ticket to an event
+A ticket is booked for an event.  The assignment submission
+is not tied to any date.  The exam ticket and the tutorial
+tickets are tied to the date on the nominal schedule.  
+
+*** Cashing in on a ticket
+A ticket may be consumed or cashed when the student either
+makes an assignment submission, attends a live tutorial
+session, or takes a final exam.  
+
+*** Rescheduling a booking
+A student may choose to reschedule a booking to a later
+date.  For assignment submissions, there is no notion of
+rescheduling.  Submissions can be made anytime.  For final
+exams and tutorials , a booking may be rescheduled up to a
+week in advance of the event date.  If slots are not
+available, the booking may be denied and the student will
+then need to look to book for a future date when that event
+will repeat.  
+
+*** Assignment tickets
+For each course, the student is initially given 11 homework
+tickets.  The student may submit an assignment any time
+during the programme calendar.  Each submission consumes one
+ticket.  If a student wishes to re-submit a homework and is
+left with no more tickets, they may do so by purchasing an
+extra ticket.  
+
+*** Ticket expires if no-show
+If a student has a booking for an exam or tutorial event,
+and the student does not attend the event, then that ticket
+is considered consumed or expired.
+
+*** Booking extra tickets
+It is possible that a student wishes to resubmit an
+assignment or re-take an exam.  In that case, the student
+may book an extra ticket.  A ticket may be booked any number
+of times.  Booking an extra ticket is accompanied by a fee.
+
+
+Table [[tbl-tix]] summarises the ticket booking policy.
+
+#+name: tbl-tix
+#+caption:  Tickets for a course
+|-------------+---------+----------+------------+-------------+----------+----------|
+|-------------+---------+----------+------------+-------------+----------+----------|
+| Ticket Type | Initial | Default  | Reschedu-  | Deadline    | Ticket   | Book     |
+|             |  no. of | Schedule | lable?     | to resche-  | expires  | extra    |
+|             | tickets |          | (provided  | dule before | if       | tickets? |
+|             |         |          | slots      | event       | no-show? |          |
+|             |         |          | available) |             |          |          |
+|-------------+---------+----------+------------+-------------+----------+----------|
+| Assignment  |      11 | Any time | N/A        | N/A         | N/A      | Yes      |
+| Submission  |         |          |            |             |          |          |
+|-------------+---------+----------+------------+-------------+----------+----------|
+| Exam        |       1 | Nominal  | Yes        | 1 week      | Yes      | Yes      |
+|-------------+---------+----------+------------+-------------+----------+----------|
+| Tutorial    |      11 | Nominal  | Yes        | 1 week      | No       | No       |
+|-------------+---------+----------+------------+-------------+----------+----------|
+
+* Certificate, Diploma and Degree
+
+1. When a student completes completes a course, the  student
+   earns the number of credits associated with the course. 
+
+2. To earn an MSc. DS degree, the 16 courses need to be
+   completed within 4 years from the date of enrollment into
+   the programme.
+   
+3. The student earns a Diploma in Data Science by completing
+   the courses 1-8.
+
+* Evaluation and Grading
+
+The graded components of the course are graded assignments
+and the final exam.  To complete and course, a student
+needs to score the minimum scores for each component given
+in Table [[tbl-min-scores]].
+
+#+name: tbl-min-scores
+#+caption:  Minimum percentage scores on assignments (all combined)  and final exam
+|------------+---------------+---------|
+|------------+---------------+---------|
+| Type       | Minimum score | Remarks |
+|------------+---------------+---------|
+| Assignment |           50% | Overall |
+|------------+---------------+---------|
+| Final Exam |           40% |         |
+|------------+---------------+---------|
+
+A weighted sum of the overall score in the graded
+assignments component and the score in the final exam
+component is taken to to arrive at the student's final score
+in the course.  The relative weights for the two components
+are shown in Table [[tbl-weights]].
+#+name: tbl-weights
+#+caption:  Relative weights of assignments and final exam to compute the course score
+|-------------+--------|
+| Activity    | Weight |
+|-------------+--------|
+| Assignments |    30% |
+|-------------+--------|
+| Final Exam  |    70% |
+|-------------+--------|
+
+The final (absolute) score obtained by the student in the
+course is mapped to a letter grade and a grade point.  The
+final Cumulative Grade Point Average is calculated in the
+standard way by taking the weighted ($w_i$) sum of the grade
+point ($p_i$) in each course $i$ of the program.
+
+\[ G = \sum_{i} p_i w_i\]
+
+#+name:  tbl-grade-points
+#+caption:  Grade Point Scale
+|-------+-------------------+--------------------+-------------|
+|-------+-------------------+--------------------+-------------|
+| Grade |    Absolute score | Category           | Grade Point |
+|       | in the course (%) |                    |             |
+|-------+-------------------+--------------------+-------------|
+| O     |            95-100 | Outstanding        |          10 |
+|-------+-------------------+--------------------+-------------|
+| A+    |             90-95 | Excellent          |           9 |
+|-------+-------------------+--------------------+-------------|
+| A     |             80-90 | Very Good          |           8 |
+|-------+-------------------+--------------------+-------------|
+| B+    |             70-80 | Good               |           7 |
+|-------+-------------------+--------------------+-------------|
+| B     |             60-70 | Fair/Above Average |           6 |
+|-------+-------------------+--------------------+-------------|
+| C     |             45-60 | Average            |           5 |
+|-------+-------------------+--------------------+-------------|
+| P     |             40-45 | Pass               |           4 |
+|-------+-------------------+--------------------+-------------|
+| I     |               <40 | Incomplete         |           0 |
+|-------+-------------------+--------------------+-------------|
+|-------+-------------------+--------------------+-------------|
+
+* Completing a course 
+** Minimum Engagement in a course
+
+A student completes a course by engaging in all the
+activities that are part of the course.  The student's
+engagement in the course will be monitored.  The minimum
+engagement necessary to complete a course is summarised in
+Table [[tbl-min-effort]].
+
+#+name: tbl-min-effort
+#+caption:  Required minimum effort by a student in a course
+|----+---------------------------------+---------------------+-----------------------------|
+|----+---------------------------------+---------------------+-----------------------------|
+|    | Activity                        | Expected Effort (h) | Required Minimum Effort     |
+|----+---------------------------------+---------------------+-----------------------------|
+| 1. | Watch video lectures with quiz  |                   2 | 75% of entire video content |
+|    |                                 |                     | of the course               |
+|----+---------------------------------+---------------------+-----------------------------|
+| 2. | Attempt Quizzes                 |                 0.5 | Every quiz in the course    |
+|----+---------------------------------+---------------------+-----------------------------|
+| 3. | Attend Tutorial/Watch recording |                   1 | 75% of all tutorials        |
+|----+---------------------------------+---------------------+-----------------------------|
+| 4. | Study reading material          |                   3 | Not monitored               |
+|----+---------------------------------+---------------------+-----------------------------|
+| 5. | Solve practice problem sheet    |                   2 | Not monitored               |
+|----+---------------------------------+---------------------+-----------------------------|
+| 6. | Submit Graded Assignment        |                   4 | Every graded assignment     |
+|----+---------------------------------+---------------------+-----------------------------|
+| 7. | Take final exam                 |                     | Take the final exam for at  |
+|    |                                 |                     | least 30 minutes            |
+|----+---------------------------------+---------------------+-----------------------------|
+
+** Completing a course
+
+A student completes a course if they satisfy all the conditions
+listed in Table
+
+#+name: tbl-completion-conditions
+#+caption:  Conditions for completing a course
+|-----+----------------------------------------------------+------------------------|
+|-----+----------------------------------------------------+------------------------|
+| No. | Condition                                          | Ref.  Table            |
+|-----+----------------------------------------------------+------------------------|
+|  1. | Satisfy the minimal engagement requirement         | Table [[tbl-min-effort]]   |
+|-----+----------------------------------------------------+------------------------|
+|  2. | Submit all graded assignments and obtain the       | Table [[tbl-min-scores]]   |
+|     | minimum overall score in all assignments combined  |                        |
+|-----+----------------------------------------------------+------------------------|
+|  3. | Clear the Final exam with a minimum score          | Table [[tbl-min-scores]]   |
+|-----+----------------------------------------------------+------------------------|
+|  4. | Get a minimum overall score in the course computed | Table [[tbl-grade-points]] |
+|     | as a weighted sum of the graded assignments        |                        |
+|     | and final exam (Table [[tbl-weights]])                 |                        |
+|-----+----------------------------------------------------+------------------------|
+
+
+** Prerequisite for taking an exam 
+
+Courses have prerequisites.  A student may take the final
+exam of a course only after have completing all the
+prerequisite courses.  Note that the condition applies only
+to taking the final exam, not registering or participating
+in the course.
+
+** Re-attempts
+
+It is quite possible that a student takes a course and
+during the course, either fails to meet the minimum score
+for assignments or an exam.   In such an event, the student
+may resubmit the assignment or retake the exam.
+
+There are fees associated with re-attempts which will be
+charged at the time of registering a re-attempt.  The
+prevailing fees are available in a separate document.
+
+* Academic Dishonesty
+
+** What constitutes Academic Dishonesty
+
+Engaging in academic dishonesty includes but is not limited
+to the following:
+
+  1. Copying from another student as part of an assignment,
+     exam, quiz or test.
+  2. Copying and pasting from the internet or a GenAI tool as part of an assignment,
+     exam, quiz or test.
+  3. Using unauthorised material during an exam, quiz or test.
+  4. Seeking help from an unauthorised person or a device
+     like a mobile phone during the process of an exam, test or quiz.
+  5. Collusion: Collaborating with another person as
+     part of an assignment, exam, quiz, or test.
+  6. Plagiarism: Submitting work not created by oneself as
+     one's own.
+
+** Penalties for Academic Dishonesty
+
+The penalties associated with academic dishonesty are listed
+in Table [[tbl-penalties]].
+
+#+name: tbl-penalties
+#+caption:  Penalties associated with Academic Dishonesty
+|------------+--------------------------------+-------------|
+|------------+--------------------------------+-------------|
+| Type       | Penalty                        | Recorded on |
+|            |                                | Transcript  |
+|------------+--------------------------------+-------------|
+| Assignment | Zero in the current assignment | Yes         |
+|            | and all previous assignments   |             |
+|            | in the course                  |             |
+|------------+--------------------------------+-------------|
+| Exam       | Zero in the current exam and   | Yes         |
+|            | Re-registration of the course  |             |
+|------------+--------------------------------+-------------|
+
+* Computer and Network Requirements
+
+Doing the online MSDS programme will require the student to
+have a computer and a robust internet connection.  A laptop
+is recommended but a desktop will suffice.
+
+** Hardware
+The recommended minimum computer hardware capabilities of the 
+are listed in Table [[tbl-hw]].
+
+#+name: tbl-hw
+#+caption:  Recommended minimum computer hardware capabilities.
+|-------------------------+------------------|
+| Item                    | Capacity         |
+|-------------------------+------------------|
+| Memory                  | 8GB              |
+|-------------------------+------------------|
+| Processor               | Intel 8th Gen or |
+|                         | AMD 4th Gen      |
+|-------------------------+------------------|
+| Hard Drive Storage      | 500GB            |
+|-------------------------+------------------|
+| Screen size             | 13inch           |
+|-------------------------+------------------|
+| Webcam, Mic and Speaker |                  |
+|-------------------------+------------------|
+
+** Software
+
+ - Free software :: All the software tools used in the
+   course will be free (as in you do not need to pay).  The
+   programme will rely on open-source software to the
+   maximum extent possible.
+
+#+name: tbl-sw
+#+caption: Software Requirements
+|------------------------------+--------------------------------------|
+|------------------------------+--------------------------------------|
+| OS                           | Windows 10+, Ubuntu 20.04+,          |
+|                              | MacOS Mojave or more recent          |
+|------------------------------+--------------------------------------|
+| Dual Boot capability         | Desirable                            |
+|------------------------------+--------------------------------------|
+| Virtualisation               | Should be able to install VirtualBox |
+|                              | containing Ubuntu 20.04              |
+|------------------------------+--------------------------------------|
+| Browser                      | Latest version of Chrome and Firefox |
+|------------------------------+--------------------------------------|
+| Account                      | IIIT DFL account                     |
+|------------------------------+--------------------------------------|
+| Programming Languages, Tools | Python, C, C++, Git                  |
+|------------------------------+--------------------------------------|
+| Version Control              | Github account                       |
+|------------------------------+--------------------------------------|
+| Bandwidth                    | 2MBps minimum                        |
+|------------------------------+--------------------------------------|
+| Protocoring                  | Installation of specific software    |
+|                              | (to be specified)                    |
+|------------------------------+--------------------------------------|
+
+ - Troubleshooting :: The programme staff does not have the
+   expertise to troubleshoot the student's software and
+   hardware installation problems.  As a result, for
+   troubleshooting, the student will need to contact vendors
+   independently.
+
+* Versioning and Version Numbers
+:PROPERTIES:
+:CUSTOM_ID: sec-version
+:END:
+
+The prospectus will invariably evolve with the offering of
+new courses within the programme and due to previously
+unanticipated situations.   The evolution will be captured
+by versions.  Each version will have a version number of the
+form x.y.z.   The meanings of each of these components is
+described in Table [[tbl-versions]].
+
+#+name: tbl-versions
+#+caption: Versions number components and their meaning
+|------------------------+---+--------------------------------------------------|
+|------------------------+---+--------------------------------------------------|
+| Major version number   | x | Updated during major policy changes, eg.,        |
+|                        |   | fee or admission policies                        |
+|------------------------+---+--------------------------------------------------|
+| Minor version number   | y | Updated to reflect minor policy changes,         |
+|                        |   | as in, particular details of an existing policy. |
+|                        |   | E.g., the minimum score for an assignment        |
+|------------------------+---+--------------------------------------------------|
+| Bug fix version number | z | Updated to reflect stylistic, grammatical and    |
+|                        |   | other copy-editing changes.                      |
+|------------------------+---+--------------------------------------------------|
+
+
+* Appendix A: Fee structure and Refund Policy
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+
+** Fee Structure
+
+Table [[tbl-fees]] captures the fee structure for the programme
+as of September 2025.  
+
+#+name: tbl-fees
+#+caption:  Fee structure for the programme as of September 2025
+|-------------------------+-----------------+----------------+----------+---------------|
+|-------------------------+-----------------+----------------+----------+---------------|
+| Registration            | Indian National | with 18% GST   | SAARC    | International |
+| Fees                    |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+| Entire programme        | 4 Lakh INR      | 4.72 Lakh INR  | 6000 USD | 12 000  USD   |
+| (16 courses)            |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+| one year                | 2.25 Lakh INR   | 2.655 Lakh INR | -        | -             |
+| (8 courses)             |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+| one semester            | 1.25 Lakh INR   | 1.475 Lakh INR | -        | -             |
+| (4 courses)             |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+| Single course           | 0.5 Lakh INR    | 0.59 Lakh INR  | 750 USD  | 1500 USD      |
+| (only when determined   |                 |                |          |               |
+| by the Academic Office) |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+| Extra Final             | 2500 INR        | 2950 INR       | 40 USD   | 80 USD        |
+| Exam ticket             |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+| Extra Assignment        | 1000 INR        | 1180 INR       | 20 USD   | 40 USD        |
+| Ticket                  |                 |                |          |               |
+|-------------------------+-----------------+----------------+----------+---------------|
+
+** Refund Policy
+
+Refund policy conforms to the refund policy of UGC.
+Refunds will be made after deducting charges associated with
+online transactions.
+
+#+name: tbl-refund
+#+caption:  Refund Policy as of September 2025
+|----------------------------------------------+-------------------|
+|----------------------------------------------+-------------------|
+| Timeline (from last date of admission)       | Refund Percentage |
+|----------------------------------------------+-------------------|
+| 15 days or more before                       |              100% |
+|----------------------------------------------+-------------------|
+| Less than 15 days before                     |               90% |
+|----------------------------------------------+-------------------|
+| 15 days or more after                        |               80% |
+|----------------------------------------------+-------------------|
+| 30 days or less, but more than 15 days after |               50% |
+|----------------------------------------------+-------------------|
+| After 30 days                                |         No refund |
+|----------------------------------------------+-------------------|
+
+* Appendix B: Course Listing
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+1. Section III (Weekly student effort) of the curriculum and
+   syllabus document is superceded by Table [[tbl-effort]].
+
+2. Some variations in the lecture and lab topics of the
+   syllabus is expected based on the individual instructor
+   preferences.
+
+#+begin_export latex
+\includepdf[pages={-},scale=.8,pagecommand={ },offset=5mm 5mm]{./msds-online-syllabus-v2.pdf}
+#+end_export
