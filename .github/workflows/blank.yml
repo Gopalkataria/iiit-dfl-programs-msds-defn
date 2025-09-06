@@ -1,0 +1,34 @@
+name: Org to PDF Release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Emacs + TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y emacs texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+
+      - name: Export all Org files to PDF
+        run: |
+          for f in *.org; do
+            emacs "$f" --batch -f org-latex-export-to-pdf
+          done
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: "PDF Release ${{ github.run_number }}"
+          draft: false
+          prerelease: false
+          files: "*.pdf"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
