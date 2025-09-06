@@ -1,4 +1,4 @@
-name: Org to PDF Release
+name: Org/MD to PDF Release
 
 on:
   push:
@@ -11,15 +11,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install Emacs + TeX
+      - name: Install Pandoc + TeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y emacs texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+          sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
-      - name: Export all Org files to PDF
+      - name: Convert Org/MD to PDF
         run: |
           for f in *.org; do
-            emacs "$f" --batch -f org-latex-export-to-pdf
+            pandoc "$f" -o "${f%.org}.pdf"
+          done
+          for f in *.md; do
+            pandoc "$f" -o "${f%.md}.pdf"
           done
 
       - name: Create Release
